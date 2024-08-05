@@ -1,1 +1,10 @@
 *.exe
+*.o
+*.out
+*.pdf
+*.log
+*.bin
+*__pycache__
+.vscode
+*.hex
+*.pyc
