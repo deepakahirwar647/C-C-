@@ -2,8 +2,8 @@
 CC = gcc
 
 # Define the target executables and their sources
-TARGETS = 01_sine_pattern.exe 02_sine_pattern.exe 03_sine_pattern.exe 04_cosine_pattern.exe
-SOURCES = 01_sine_pattern.c 02_sine_pattern.c 03_sine_pattern.c 04_cosine_pattern.c
+TARGETS = 01_sine_pattern.exe 02_sine_pattern.exe 03_sine_pattern.exe 04_cosine_pattern.exe 05_sine_pattern.exe
+SOURCES = 01_sine_pattern.c 02_sine_pattern.c 03_sine_pattern.c 04_cosine_pattern.c 05_sine_pattern.c
 
 # Default target to build all executables
 all: $(TARGETS)
@@ -20,6 +20,9 @@ all: $(TARGETS)
 
 04_cosine_pattern.exe: 04_cosine_pattern.c
 	$(CC) 04_cosine_pattern.c -o 04_cosine_pattern.exe
+
+05_sine_pattern.exe: 05_sine_pattern.c
+	$(CC) 05_sine_pattern.c -o 05_sine_pattern.exe
 
 # Clean rule to remove all executables
 clean:

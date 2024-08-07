@@ -60,5 +60,5 @@ def make(c_files: list[tuple[str, str]]):
         print(f"An error occured while creating the Makefile: {e}")
 
 
-if __name__ == "__main __":
+if __name__ == "__main__":
     main()
