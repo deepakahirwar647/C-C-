@@ -55,12 +55,13 @@ inline void print_spaces(int n)
 void print_vertical_sinewave(const size_t STOP_ITERATION_COUNT)
 {
 
+    const int AMPLITUDE = 20
     const int SAMPLING_RATE = 30;
     const int DELAY_MS = 50;
 
     for (size_t i = 0; i < STOP_ITERATION_COUNT; ++i)
     {
-        int offset = 20 * (sin(2.0 * PI * i / SAMPLING_RATE) + 1.0);
+        int offset = AMPLITUDE * (sin(2.0 * PI * i / SAMPLING_RATE) + 1.0);
         print_spaces(offset);
         putchar(SYMBOL);
         putchar('\n');
