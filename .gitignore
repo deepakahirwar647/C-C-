@@ -8,3 +8,6 @@
 .vscode
 *.hex
 *.pyc
+*.png
+*.jpg
+*.jpeg
